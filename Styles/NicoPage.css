@@ -1,0 +1,93 @@
+header {
+    border-bottom: 2px solid black;
+    background-color: floralwhite;
+}
+.flex-header {
+    display: flex;
+    align-items: flex-end;
+}
+.headernav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.headernav a {
+    margin-right: 10px;
+}
+.flex-header nav {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: cornsilk;
+}
+.side {
+    border-right: 2px solid black;
+    flex: 2;
+    align-items: flex-start;
+    margin-right: 10px;
+    background-color: burlywood;
+}
+#Ten4 {
+    border: 2px dotted black;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+}
+#Ten4-Head {
+    border: 1px solid black;
+    background-color: darkgray;
+}
+#Ten5 {
+    border: 2px dotted black;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+}
+#Ten5-Head {
+    border: 1px solid black;
+    background-color: darkgray;
+}
+#Ten6 {
+    border: 2px dotted black;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+}
+#Ten6-Head {
+    border: 1px solid black;
+    background-color: darkgray;
+}
+.side nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.side img {
+    object-fit: cover;
+    height: 350px;
+}
+#biography {
+    flex: 6;
+}
+#biography h2 {
+    text-align: center;
+}
+#carouselhead {
+    text-align: center;
+}
+.carouselcontainer {
+    border: 2px dotted black;
+    background-color: blanchedalmond;
+    margin-right: 10px;
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 900px;
+    width: 250px;
+}
+footer {
+    background-color: beige;
+    border-top: 2px solid black;
+    text-align: center;
+    height: 6em;
+}

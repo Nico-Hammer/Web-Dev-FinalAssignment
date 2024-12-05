@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/NicoPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <title>Tenley's Page</title>
+</head>
+<body>
+    <header class="flex-header">
+        <h1>This is Tenleys page!</h1>
+        <nav class="headernav">
+            <a href="./index.html">Main page</a>
+            <a href="./KoryPage.html">Kory's page</a>
+        </nav>
+    </header>
+    <main class="flex-container">
+        <section class="side">
+            <h2>this is the side part</h2>
+            <nav>
+                <a href="#biography">Biography</a>
+                <a href="#Tenleycarousel">Images</a>
+            </nav>
+            <div class="card1" id="Ten4">
+                <img src="./Images/Tenley/tenley4.jpg" alt="Tenley-Roll" class="card-img-top">
+                <div class="card-header" id="Ten4-Head">Tenley</div>
+                <div class="card-body">
+                    <p class="card-text" id="Ten4-Body">A picture of Tenley laying on her back</p>
+                </div>
+            </div>
+            <div class="card2" id="Ten5">
+                <img src="./Images/Tenley/tenley5.jpg" alt="Tenley-Bed  " class="card-img-top">
+                <div class="card-header" id="Ten5-Head">Tenley</div>
+                <div class="card-body">
+                    <p class="card-text" id="Ten5-Body">A picture of Tenley laying on a bed with her head cocked to the side</p>
+                </div>
+            </div>
+            <div class="card3" id="Ten6">
+                <img src="./Images/Tenley/tenley6.jpg" alt="Tenley-Anger" class="card-img-top">
+                <div class="card-header" id="Ten6-Head">Tenley</div>
+                <div class="card-body">
+                    <p class="card-text" id="Ten6-Body">A picture of Tenley standing on a counter, looking ready to attack</p>
+                </div>
+            </div>
+        </section>
+        <section id="biography">
+        <h2>Biography</h2>
+        <p>"Tenley is the cat most recently adopted into my home, and she was about a year old when
+            I got her. She’s around 4 years old now – the time sure does fly. After I lost Maxwell, I
+            volunteered at the local animal shelter to help all the kitties who didn’t have a home, and
+            every morning when I walked into that room, she came up to me and was super affectionate
+            and interested. I knew immediately: I would adopt this cat!
+            She took no time to get adjusted to my home, and is one of the sweetest cats I’ve ever met.
+            She loves to cuddle and be petted, and never runs out of energy. Her favorite thing to do is
+            carry her fishing rod around at 3AM and meow looking for attention. Her and Mona don’t get along extremely well, in part because of a clash of personalities.
+            Tenley is very active and outgoing and full of energy, so with a more anxious cat, it just
+            doesn’t work well. But overall they’ve learned to co-exist without issue, so it’s fine.”</p>
+        </section>
+        <section class="carouselcontainer">
+            <h2 id="carouselhead">Images</h2>
+            <div class="carousel slide" id="Tenleycarousel">
+                <button class="carousel-control-prev" type="button" data-bs-target="#Tenleycarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" aria-hidden="true">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Tenleycarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" aria-hidden="true">Previous</span>
+                </button>                    
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/Tenley/tenley1.jpg" alt="urt" class="d-block w-100 "/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/Tenley/tenley2.jpg" alt="text" class="d-block w-100"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/Tenley/tenley3.jpg" alt="text" class="d-block w-100"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><b>This page was made by Nico Hammer <br/>Images were provided by "Travis Cattington"</b></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous">
+        const myCarouselElement = document.querySelector('#Tenleycarousel')
+        const carousel = new bootstrap.carousel(myCarouselElement, {})
+    </script>
+</body>
+</html>
