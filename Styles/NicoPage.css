@@ -1,73 +1,108 @@
+* {
+    color: white;
+    font-family: Avenir;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #8B0000 !important;
+}
 header {
-    border-bottom: 2px solid black;
-    background-color: floralwhite;
+    grid-area: header;
+    border: 2px dotted rgb(30, 255, 0);
 }
 .flex-header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.flex-header img {
+    height: 50px;
+    padding: 0 20px;
 }
 .headernav {
     display: flex;
     justify-content: space-evenly;
 }
 .headernav a {
+    color: white;
     margin-right: 10px;
 }
-.flex-header nav {
-    margin-left: 20px;
-    margin-bottom: 15px;
+.headernav a:hover {
+        color: #74FFFF;
 }
-.flex-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-color: cornsilk;
+aside img {
+    object-fit: cover;
+    width: 300px;
+    height: 236px;
 }
 .side {
-    border-right: 2px solid black;
-    flex: 2;
-    align-items: flex-start;
+    grid-area: sidebar;
+    border: 2px solid #2207f2;
     margin-right: 10px;
-    background-color: burlywood;
 }
-#Ten4 {
-    border: 2px dotted black;
-    background-color: gainsboro;
-    margin-bottom: 10px;
+.row {
+    border: none;
 }
-#Ten4-Head {
-    border: 1px solid black;
-    background-color: darkgray;
-}
-#Ten5 {
-    border: 2px dotted black;
-    background-color: gainsboro;
-    margin-bottom: 10px;
-}
-#Ten5-Head {
-    border: 1px solid black;
-    background-color: darkgray;
-}
-#Ten6 {
-    border: 2px dotted black;
-    background-color: gainsboro;
-    margin-bottom: 10px;
-}
-#Ten6-Head {
-    border: 1px solid black;
-    background-color: darkgray;
+.side h2 {
+    text-align: center;
+    padding-top: 20px;
 }
 .side nav {
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
 }
-.side img {
-    object-fit: cover;
-    height: 350px;
+.side a {
+    color: white;
 }
-#biography {
-    flex: 6;
+.side a:hover {
+    color: #74FFFF;
+}
+.side ul {
+    padding: 10px;
+    list-style-type: none;
+}
+.side p {
+    color: black;
+    padding-top: 15px;
+}
+.card {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#Ten4 {
+    margin-bottom: 10px;
+}
+#Ten4-Body {
+    height: 50px;
+}
+#Ten5 {
+    margin-bottom: 10px;
+}
+#Ten5-Body {
+    height: 50px;
+}
+#Ten6 {
+    margin-bottom: 10px;
+}
+#Ten6-Body {
+    height: 50px;
+}
+.content-container {
+    width: 100%;
+    border: 2px solid #f70459;
+    grid-area: main;
+}
+.content-container p {
+    padding: 15px;
+    font-size: 22px;
 }
 #biography h2 {
     text-align: center;
@@ -76,18 +111,41 @@ header {
     text-align: center;
 }
 .carouselcontainer {
-    border: 2px dotted black;
-    background-color: blanchedalmond;
     margin-right: 10px;
+    width: 100%;
 }
 .carousel-inner img {
     object-fit: cover;
-    height: 900px;
-    width: 250px;
+    height: 600px;
 }
 footer {
-    background-color: beige;
-    border-top: 2px solid black;
+    grid-area: footer;
+    border: 2px solid #f906b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 6em;
+}
+footer p {
+    padding-top: 20px;
+}
+@media screen and (max-width: 1300px) {
+    body {
+        grid-template-areas:
+        "header header"
+        "sidebar"
+        "main main" 
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 850px) {
+    body {
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main" 
+        "footer";
+        grid-template-columns: 1fr;
+    }
 }
