@@ -41,7 +41,6 @@ ul {
   }
 
   a {
-    margin: 0 10px;
     color: white;
   }
 
@@ -54,8 +53,10 @@ ul {
 aside {
     grid-area: sidebar;
     border: 2px solid #2207f2;
-    display: flex;
-    justify-content: center;
+}
+
+aside h2 {
+    text-align: center;
 }
 
 main {
