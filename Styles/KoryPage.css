@@ -1,0 +1,89 @@
+* {
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #8B0000;
+}
+
+header {
+    grid-area: header;
+    border: 2px solid rgb(30, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    padding: 0 20px;
+}
+
+header img {
+    height: 50px;
+    padding: 0 20px;
+}
+
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Make the list horizontal */
+    gap: 10px; /* Add spacing between items */
+  }
+
+  a {
+    margin: 0 10px;
+    color: white;
+  }
+
+  a:hover {
+    color: #74FFFF;
+  }
+
+
+
+aside {
+    grid-area: sidebar;
+    border: 2px solid #2207f2;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    border: 2px solid #f70459;
+}
+
+main p {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.carouselcontainer {
+    border: 2px dotted black;
+    margin-right: 10px;
+    width: 100%;
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 600px;
+}
+
+footer {
+    grid-area: footer;
+    border: 2px solid #f906b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
