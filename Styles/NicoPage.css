@@ -1,7 +1,9 @@
+/* applying global font and text colour */
 * {
     color: white;
     font-family: Avenir;
 }
+/* setting the body up as a grid */
 body {
     display: grid;
     grid-template-areas:
@@ -17,6 +19,7 @@ header {
     grid-area: header;
     border: 2px dotted rgb(30, 255, 0);
 }
+/* making header a flexbox to use the space-between formatting */
 .flex-header {
     display: flex;
     align-items: center;
@@ -28,6 +31,7 @@ header {
     height: 50px;
     padding: 0 20px;
 }
+/* again using flexbox to make spacing nice in the navigation portion of the header */
 .headernav {
     display: flex;
     justify-content: space-evenly;
@@ -39,18 +43,17 @@ header {
 .headernav a:hover {
         color: #74FFFF;
 }
+/* making the images in the aside take up their whole container and be somewhat visually appealing */
 aside img {
     object-fit: cover;
     width: 300px;
     height: 236px;
 }
+/* formatting for the sidebar section */
 .side {
     grid-area: sidebar;
     border: 2px solid #2207f2;
     margin-right: 10px;
-}
-.row {
-    border: none;
 }
 .side h2 {
     text-align: center;
@@ -77,6 +80,7 @@ aside img {
     margin-right: 10px;
     margin-left: 10px;
 }
+/* some formatting for each individual card */
 #Ten4 {
     margin-bottom: 10px;
 }
@@ -95,6 +99,7 @@ aside img {
 #Ten6-Body {
     height: 50px;
 }
+/* formatting for the main content area (carousel and biography) */
 .content-container {
     width: 100%;
     border: 2px solid #f70459;
@@ -129,6 +134,7 @@ footer {
 footer p {
     padding-top: 20px;
 }
+/* making the site more suited for both phones and tablets using media queries */
 @media screen and (max-width: 1300px) {
     body {
         grid-template-areas:
