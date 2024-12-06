@@ -1,5 +1,6 @@
 * {
     color: white;
+    font-family: Avenir;
 }
 
 body {
@@ -16,14 +17,15 @@ body {
 
 header {
     grid-area: header;
-    border: 2px solid rgb(30, 255, 0);
+    border: 2px dotted rgb(30, 255, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header h1 {
-    padding: 0 20px;
+    padding: 0 10px;
+    margin: 10px;
 }
 
 header img {
@@ -32,12 +34,12 @@ header img {
 }
 
 
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Make the list horizontal */
-    gap: 10px; /* Add spacing between items */
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
   }
 
   a {
@@ -49,14 +51,31 @@ ul {
   }
 
 
-
-aside {
+  aside {
     grid-area: sidebar;
     border: 2px solid #2207f2;
+    /* position: fixed;
+    top: 111px;
+    left: 20px;
+    width: 333px;
+    height: 100%; */
 }
 
-aside h2 {
+aside ul {
     text-align: center;
+    list-style-type: none;
+    padding: 10px;
+
+}
+   aside h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+aside img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 main {
@@ -66,11 +85,14 @@ main {
 
 main p {
     padding: 15px;
-    font-size: 16px;
+    font-size: 22px;
+}
+
+main h2 {
+    padding: 20px;
 }
 
 .carouselcontainer {
-    border: 2px dotted black;
     margin-right: 10px;
     width: 100%;
 }
@@ -78,6 +100,7 @@ main p {
     object-fit: cover;
     height: 600px;
 }
+
 
 footer {
     grid-area: footer;
@@ -88,3 +111,17 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main" 
+        "footer";
+        grid-template-columns: 1fr;
+    }
+}
