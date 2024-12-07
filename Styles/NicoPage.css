@@ -13,11 +13,11 @@ body {
     grid-template-columns: 1fr 3fr;
     gap: 20px;
     padding: 20px;
-    background-color: #8B0000 !important;
+    background-color: #8B4513!important;
 }
 header {
     grid-area: header;
-    border: 2px dotted rgb(30, 255, 0);
+    border: 2px dotted white;
 }
 /* making header a flexbox to use the space-between formatting */
 .flex-header {
@@ -102,7 +102,7 @@ aside img {
 /* formatting for the main content area (carousel and biography) */
 .content-container {
     width: 100%;
-    border: 2px solid #f70459;
+    border: 2px solid #8604f7;
     grid-area: main;
 }
 .content-container p {
@@ -125,7 +125,7 @@ aside img {
 }
 footer {
     grid-area: footer;
-    border: 2px solid #f906b8;
+    border: 2px solid #0073b5;
     display: flex;
     justify-content: center;
     align-items: center;
